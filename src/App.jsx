@@ -23,7 +23,7 @@ export default function App() {
           arti: item.arti || item.Arti || "",
           keterangan: item.keterangan || item.Keterangan || "",
           kamus: item.kamus || item.Kamus || "",   // Tambahkan baris ini
-          perubahan: item.perubahan || item.perubahan || "", // Tambahkan baris ini
+          perubahan: item.perubahan || item.Perubahan || "", // Tambahkan baris ini
         }));
 
         setData(json);
@@ -96,10 +96,10 @@ export default function App() {
           {/* Front Card */}
           <div className="absolute w-full h-full backface-hidden bg-white rounded-2xl shadow-lg flex flex-col items-center justify-center">
             <div className="absolute top-4 left-4 text-xs text-gray-300">
-              {current.kamus}
+              {current.kamus || "-"}
             </div>
             <div className="absolute bottom-4 left-4 text-xs text-gray-300">
-              {current.perubahan}
+              {current.perubahan || "-"}
             </div>
             
             <h1 className="text-2xl font-normal text-center">
