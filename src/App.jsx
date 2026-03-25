@@ -98,7 +98,7 @@ export default function App() {
             <div className="absolute top-4 left-4 text-xs text-gray-300">
               {current.kamus}
             </div>
-            <div className="absolute top-4 right-4 text-xs text-gray-300">
+            <div className="absolute bottom-4 left-4 text-xs text-gray-300">
               {current.perubahan}
             </div>
             
